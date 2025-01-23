@@ -1,0 +1,339 @@
+@import "https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister";
+  
+  /* Apply styles to the HTML and body elements */
+  html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Love Ya Like A Sister';
+  background-color: #f3e0e2; 
+  color: #71797E; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  /* Styles for the header section */
+  header {
+  text-align: left;
+  padding: 20px;
+  background: transparent;
+  position: absolute;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  z-index: 1; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  }
+
+  /* Styles for links within the container */
+  .container a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Love Ya Like A Sister';
+  font-size: 26px;
+  margin: 0px 50px; /* Increase the margin for spacing */
+  padding: 50px 50px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  }
+  
+  
+/* Styles for ball of yarn hovering effect*/
+  .container a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 100px;
+  height: 100px;
+  background: url('visuals/clipartyarn.png') center center / cover no-repeat;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 0;
+  }
+  
+  
+  .container a::before {
+  transform: translate(-50%, -50%) scale(0);
+  }
+  
+  
+  .container a.home::before {
+  left: -55px;
+  }
+  
+  
+  .container a.all::before {
+  left: 75px;
+  transform: translateX(80%); 
+  margin-right: 20px; 
+  }
+  
+  
+  .container a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.2;
+  }
+
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Love Ya Like A Sister';
+}
+
+/* Styles for the footer section */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #FEB1C1;
+  min-height: 50px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styles for menu items */
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #71797E;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #71797E;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #71797E;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Styles for animated wave elements */
+.wave {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 150%;
+  height: 132px;
+  background: url("../../wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 80px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+0% {
+  background-position-x: 1000px;
+}
+100% {
+  background-position-x: 0px;
+}
+}
+
+@keyframes animate {
+0% {
+  background-position-x: -1000px;
+}
+100% {
+  background-position-x: 0px;
+}
+}
+
+/* Main Game Container Styles */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.play-button, .stop-button, .difficulty-buttons {
+  margin: 10px;
+}
+
+
+
+/* Main Game Container Styles */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.play-button, .stop-button, .difficulty-buttons {
+  margin: 10px;
+}
+
+/* Game Section Styles (Placeholder) */
+.game-section {
+  background-color: #fdf28d; 
+  border: 2px solid #003366; 
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 80%; 
+  height: 350px; 
+}
+
+/* Footer Styles */
+.footer {
+  background: #FEB1C1; 
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 10px;
+  background-color: #6ce2de;; 
+  color: #71797E; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  background-color: #fdf28d; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Love Ya Like A Sister';
+}
+/*styles for scoreboard table*/
+.scoreboard {
+  text-align: center;
+  background-color: #fdf28d; 
+  border: 2px solid #003366; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #003366; 
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #57dff1; 
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #FEB1C1; 
+}
+
+.score {
+  font-weight: bold;
+  color: #71797E;
+}
+.button-container {
+  text-align: center; /* Center align the contents horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

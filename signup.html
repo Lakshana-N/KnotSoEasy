@@ -1,0 +1,79 @@
+<!DOCTYPE html>oard
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knot So Easy</title>
+    <link rel="stylesheet" href="assets\css\signup.css">
+</head>
+<body>
+
+<!-- Header section -->
+<div class="header">
+    <div class="container">
+        <a href="signup.html">SIGNUP</a>
+        <a href="login.html">SIGNIN</a>
+        <a href="index.html">HOME</a>
+        <a href="game.html">GAME</a>
+        <a href="scoreboard.html">SCOREBOARD</a>
+    </div>
+</div>
+
+<!-- Main content section -->
+<div class="container1" id="container">
+    <div class="form-container log-in-container">
+        <form id="signupForm" onsubmit="saveDetails(); return false;">
+            <h1>SIGN UP</h1>
+            <!-- Input fields for name, email, password, confirm password, and date of birth -->
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+            <input type="date" id="dob" placeholder="Date of Birth" required />
+            
+            <!-- New input field for phone number -->
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+
+            <!-- Button to submit the form -->
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right">
+                <figure><img src="visuals/shaunwaves.png" alt="sign up image"></figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer section -->
+<footer class="footer">
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <!-- Social icons -->
+    <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+        <!-- Add other social icons as needed -->
+    </ul>
+    <!-- Menu links -->
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="game.html">Game</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+    </ul>
+    <p> &copy;2023 Knot So Easy | All Rights Reserved</p>
+</footer>
+
+<!-- Include the JavaScript file -->
+<script src="assets\js\signup.js"></script>
+
+</body>
+</html>

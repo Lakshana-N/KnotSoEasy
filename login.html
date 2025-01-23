@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knot So Easy</title>
+    <link rel="stylesheet" href="assets\css\login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <a href="signup.html">SIGNUP</a>
+        <a href="login.html">SIGNIN</a>
+        <a href="index.html">HOME</a>
+        <a href="game.html">GAME</a>
+        <a href="scoreboard.html">SCOREBOARD</a>
+    </div>
+</div>
+
+<div class="container1" id="container">
+    <div class="form-container log-in-container">
+        <form id="loginForm" onsubmit="loginUser(); return false;">
+            <h1>Sign In</h1>
+            <input type="email" id="loginEmail" placeholder="Email" required />
+            <input type="password" id="loginPassword" placeholder="Password" required />
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right">
+                <figure><img src="visuals/shaunlaughing.png" alt="sign up image"></figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="game.html">Game</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+    </ul>
+    <p> &copy;2023 Knot So Easy | All Rights Reserved</p>
+</footer>
+
+<script src="assets\js\login.js"></script>
+
+</body>
+</html>
