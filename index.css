@@ -5,13 +5,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
     }
-        /* Prevent horizontal scrolling */
-    html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    }
+
 
     /* Header styles */
     .header {
